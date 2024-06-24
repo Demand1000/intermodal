@@ -1,0 +1,57 @@
+[
+    {
+        "Train Type": "TLX",
+        "Train Line": "RE1",
+        "Train Number": "5685",
+        "Platform": "2",
+        "Stations": "Bischofswerda|Bautzen|Löbau(Sachs)|Görlitz|Zgorzelec",
+        "Arrival": "2406211552",
+        "Changed Arrival": "2406211552",
+        "Departure": "2406211553",
+        "Changed Departure": "2406211553"
+    },
+    {
+        "Train Type": "TLX",
+        "Train Line": "RE2",
+        "Train Number": "20851",
+        "Platform": "2",
+        "Stations": "Bischofswerda|Neukirch(Lausitz)Ost|Wilthen|Sohland|Ebersbach(Sachs)|Neugersdorf|Oberoderwitz|Zittau|Hradek nad Nisou|Chrastava|Liberec",
+        "Arrival": "2406211552",
+        "Changed Arrival": "2406211552",
+        "Departure": "2406211553",
+        "Changed Departure": "2406211553"
+    },
+    {
+        "Train Type": "TL",
+        "Train Line": "RB61",
+        "Train Number": "20860",
+        "Platform": "3",
+        "Stations": "Radeberg|Langebrück(Sachs)|Dresden-Klotzsche|Dresden Industriegelände|Dresden-Neustadt|Dresden Mitte|Dresden Hbf",
+        "Arrival": "2406211533",
+        "Changed Arrival": "2406211544",
+        "Departure": "2406211533",
+        "Changed Departure": "2406211545"
+    },
+    {
+        "Train Type": "TL",
+        "Train Line": "RB60",
+        "Train Number": "76525",
+        "Platform": "2",
+        "Stations": "Großharthau|Weickersdorf(Sachs)|Bischofswerda|Demitz-Thumitz|Seitschen|Bautzen|Kubschütz|Pommritz|Breitendorf|Löbau(Sachs)|Zoblitz|Reichenbach(Oberlausitz)|Gersdorf(Görlitz)|Görlitz-Rauschwalde|Görlitz",
+        "Arrival": "2406211525",
+        "Changed Arrival": "2406211525",
+        "Departure": "2406211526",
+        "Changed Departure": "2406211526"
+    },
+    {
+        "Train Type": "TLX",
+        "Train Line": "RE1",
+        "Train Number": "5678",
+        "Platform": "3",
+        "Stations": "Radeberg|Dresden-Klotzsche|Dresden-Neustadt|Dresden Mitte|Dresden Hbf",
+        "Arrival": "2406211506",
+        "Changed Arrival": "2406211509",
+        "Departure": "2406211506",
+        "Changed Departure": "2406211509"
+    }
+]

@@ -1,0 +1,68 @@
+[
+    {
+        "Train Type": "TL",
+        "Train Line": "RB60",
+        "Train Number": "76527",
+        "Platform": "2",
+        "Stations": "Großharthau|Weickersdorf(Sachs)|Bischofswerda|Demitz-Thumitz|Seitschen|Bautzen|Kubschütz|Pommritz|Breitendorf|Löbau(Sachs)|Zoblitz|Reichenbach(Oberlausitz)|Gersdorf(Görlitz)|Görlitz-Rauschwalde|Görlitz",
+        "Arrival": "2406211623",
+        "Changed Arrival": "2406211627",
+        "Departure": "2406211623",
+        "Changed Departure": "2406211627"
+    },
+    {
+        "Train Type": "TLX",
+        "Train Line": "RE1",
+        "Train Number": "26907",
+        "Platform": "2",
+        "Stations": "Bischofswerda|Bautzen|Löbau(Sachs)|Görlitz",
+        "Arrival": "2406211652",
+        "Changed Arrival": "2406211652",
+        "Departure": "2406211653",
+        "Changed Departure": "2406211653"
+    },
+    {
+        "Train Type": "TL",
+        "Train Line": "RB60",
+        "Train Number": "76522",
+        "Platform": "3",
+        "Stations": "Radeberg|Langebrück(Sachs)|Dresden-Klotzsche|Dresden Industriegelände|Dresden-Neustadt|Dresden Mitte|Dresden Hbf",
+        "Arrival": "2406211633",
+        "Changed Arrival": "2406211636",
+        "Departure": "2406211633",
+        "Changed Departure": "2406211637"
+    },
+    {
+        "Train Type": "TL",
+        "Train Line": "RB61",
+        "Train Number": "76553",
+        "Platform": "2",
+        "Stations": "Großharthau|Weickersdorf(Sachs)|Bischofswerda|Schmölln(Ol)|Putzkau|Neukirch(Lausitz)West|Neukirch(Lausitz)Ost|Wilthen|Schirgiswalde-Kirschau|Sohland|Taubenheim(Spree)|Neusalza-Spremberg|Ebersbach(Sachs)|Neugersdorf|Eibau|Oberoderwitz Oberdorf|Oberoderwitz|Niederoderwitz|Mittelherwigsdorf|Zittau",
+        "Arrival": "2406211623",
+        "Changed Arrival": "2406211627",
+        "Departure": "2406211623",
+        "Changed Departure": "2406211627"
+    },
+    {
+        "Train Type": "TLX",
+        "Train Line": "RE1",
+        "Train Number": "5680",
+        "Platform": "3",
+        "Stations": "Radeberg|Langebrück(Sachs)|Dresden-Klotzsche|Dresden Industriegelände|Dresden-Neustadt|Dresden Mitte|Dresden Hbf",
+        "Arrival": "2406211616",
+        "Changed Arrival": "2406211616",
+        "Departure": "2406211616",
+        "Changed Departure": "2406211617"
+    },
+    {
+        "Train Type": "TLX",
+        "Train Line": "RE2",
+        "Train Number": "20850",
+        "Platform": "3",
+        "Stations": "Radeberg|Dresden-Klotzsche|Dresden-Neustadt|Dresden Mitte|Dresden Hbf",
+        "Arrival": "2406211606",
+        "Changed Arrival": "2406211607",
+        "Departure": "2406211606",
+        "Changed Departure": "2406211608"
+    }
+]
