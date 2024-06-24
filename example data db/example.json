@@ -11,14 +11,14 @@
         "Changed Departure": "2406211553"
     },
     {
-        "Train Type": "TLX",
-        "Train Line": "RE2",
-        "Train Number": "20851",
-        "Platform": "2",
-        "Stations": "Bischofswerda",
-        "Arrival": "2406211552",
-        "Changed Arrival": "2406211552",
-        "Departure": "2406211553",
-        "Changed Departure": "2406211553"
+        "Train Type": "TL",
+        "Train Line": "RB61",
+        "Train Number": "20860",
+        "Platform": "3",
+        "Stations": "Radeberg",
+        "Arrival": "2406211533",
+        "Changed Arrival": "2406211544",
+        "Departure": "2406211533",
+        "Changed Departure": "2406211545"
     }
 ]
