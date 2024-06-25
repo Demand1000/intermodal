@@ -9,7 +9,7 @@ class Train:
         self.train_line = data.get("Train Line")
         self.train_number = data.get("Train Number")
         self.platform = data.get("Platform")
-        self.stations = data.get("Stations")
+        self.station = data.get("Stations")
         self.arrival_planned = data.get("Arrival")
         self.arrival_changed = data.get("Changed Arrival")
         self.departure_planned = data.get("Departure")
@@ -21,7 +21,7 @@ class Train:
         print("train line:", self.train_line)
         print("train number:", self.train_number)
         print("platform:", self.platform)
-        print("stations:", self.stations)
+        print("station:", self.station)
         print("arrival_planned:", self.arrival_planned)
         print("arrival_changed:", self.arrival_changed)
         print("departure_planned:", self.departure_planned)
@@ -33,30 +33,32 @@ class Train:
             "Train Line": self.train_line,
             "Train Number": self.train_number,
             "Platform": self.platform,
-            "Stations": self.stations,
+            "Station": self.station,
             "Arrival Planned": pd.to_datetime(self.arrival_planned, format="%y%m%d%H%M"), #change date columns to date format
             "Arrival Changed": pd.to_datetime(self.arrival_changed, format="%y%m%d%H%M"),
             "Departure Planned": pd.to_datetime(self.departure_planned, format="%y%m%d%H%M"),
             "Departure Changed": pd.to_datetime(self.departure_changed, format="%y%m%d%H%M")
         }
 
-
     def read_json_files_to_dataframe(folder_path):
         all_data = []
         for filename in os.listdir(folder_path):
             if filename.endswith(".json"):
+                # Extract station name by removing "DB_" and everything after "_2024"
+                station_name = filename[3:].split("_2024")[0]
                 filepath = os.path.join(folder_path, filename)
                 with open(filepath, "r") as f:
                     data = json.load(f)
                     if isinstance(data, list):
                         for item in data:
                             train_instance = Train(item)
+                            train_instance.station = station_name  # Set station name
                             all_data.append(train_instance.to_dict())
                     else:
                         train_instance = Train(data)
+                        train_instance.station = station_name  # Set station name
                         all_data.append(train_instance.to_dict())
         return pd.DataFrame(all_data)
-
 
     def add_time_deltas(df):
         #TODO uses dropNA -> check if those trains where on time, or canceled
