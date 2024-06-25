@@ -24,4 +24,6 @@ print(df.head())
 print(df.info())
 print(df)
 
-db.db_plots.scatter_line_plot(df)
+#db.db_plots.scatter_line_plot(df=df, input_station="Arnsdorf(Dresden)")
+db.db_plots.scatter_line_plot(df=df, input_station="Weinböhla_Hp")
+
