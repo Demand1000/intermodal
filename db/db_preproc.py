@@ -59,10 +59,11 @@ class Train:
 
 
     def add_time_deltas(df):
-        df['Arrival Delta'] = ((df['Arrival Changed'] - df['Arrival Planned']).dt.total_seconds() / 60).round(
-            decimals=0).astype(int)
-        df['Departure Delta'] = ((df['Departure Changed'] - df['Departure Planned']).dt.total_seconds() / 60).round(
-            decimals=0).astype(int)
+        #TODO uses dropNA -> check if those trains where on time, or canceled
+        df['Arrival Delta'] = ((df['Arrival Changed'] - df['Arrival Planned']).dt.total_seconds() / 60).dropna(
+            ).round(decimals=0).astype(int)
+        df['Departure Delta'] = ((df['Departure Changed'] - df['Departure Planned']).dt.total_seconds() / 60).dropna(
+            ).round(decimals=0).astype(int)
         return df
 
     @classmethod
