@@ -18,6 +18,7 @@ pd.set_option('display.max_colwidth', None) # Display full column width
 
 
 df['Arrival Planned Count min'] = df.groupby('Arrival Planned')['Arrival Planned'].transform('count')
+df['Arrival Changed Count min'] = df.groupby('Arrival Changed')['Arrival Changed'].transform('count')
 
 print(df.head())
 print(df.info())
