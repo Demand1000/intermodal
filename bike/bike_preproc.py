@@ -34,3 +34,33 @@ class bike:
         df = pd.json_normalize(all_data)
 
         return df
+
+    def expand_bike_numbers(df):
+        # Initialize an empty list to store the expanded data
+        expanded_data = []
+
+        # Iterate over each row in the DataFrame
+        for index, row in df.iterrows():
+            lat = row['lat']
+            lng = row['lng']
+            name = row['name']
+            time = row['time']
+
+            # Iterate over each bike_number in the bike_numbers list
+            for bike_number in row['bike_numbers']:
+                # Create a new dictionary for each bike_number with additional features
+                bike_data = {
+                    'bike_number': bike_number,
+                    'lat': lat,
+                    'lng': lng,
+                    'time': time,
+                    'name': name,
+                }
+
+                # Append the bike_data to the expanded_data list
+                expanded_data.append(bike_data)
+
+        # Create a new DataFrame from the expanded_data list
+        expanded_df = pd.DataFrame(expanded_data)
+
+        return expanded_df
