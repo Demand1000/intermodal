@@ -1,13 +1,13 @@
 import pandas as pd
 
-import db.db_preproc
-import db.db_plots
+import train.train_preproc
+import train.train_plots
 
 # Replace 'folder_JSON' with your actual folder path containing JSON files
-folder_path = 'example data db'
-df = db.db_preproc.Train.read_json_files_to_dataframe(folder_path)
+folder_path = 'example_data_train'
+df = train.train_preproc.Train.read_json_files_to_dataframe(folder_path)
 
-df = db.db_preproc.Train.add_time_deltas(df=df)
+df = train.train_preproc.Train.add_time_deltas(df=df)
 
 
 
@@ -24,6 +24,6 @@ print(df.head())
 print(df.info())
 print(df)
 
-#db.db_plots.scatter_line_plot(df=df, input_station="Arnsdorf(Dresden)")
-db.db_plots.scatter_line_plot(df=df, input_station="Weinböhla_Hp")
+#train.db_plots.scatter_line_plot(df=df, input_station="Arnsdorf(Dresden)")
+train.train_plots.scatter_line_plot(df=df, input_station="Weinböhla_Hp")
 
