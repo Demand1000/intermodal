@@ -7,6 +7,7 @@ import os
 from datetime import datetime
 
 import bike_preproc
+import bike_maps
 
 # Set pandas options to display the full DataFrame
 pd.set_option('display.max_columns', None)  # Display all columns
@@ -56,24 +57,8 @@ print(df_bike__bikes_per_bike_number)
 print(df_bike__bikes_per_bike_number.info())
 print(df_bike__bikes_per_bike_number.describe())
 
-import folium
-from datetime import datetime
-import pandas as pd
 
-# Initialize the map centered around the mean coordinates
-map_center = [df_bike__bikes_per_bike_number['lat'].mean(), df_bike__bikes_per_bike_number['lng'].mean()]
-mymap = folium.Map(location=map_center, zoom_start=12)
-
-# Add markers for each bike location
-for index, row in df_bike__bikes_per_bike_number.iterrows():
-    folium.Marker(
-        location=[row['lat'], row['lng']],
-        popup=f"Bike Number: {row['bike_number']}<br>Time: {row['time'].strftime('%Y-%m-%d %H:%M:%S')}",
-        icon=folium.Icon(color='blue', icon='bicycle', prefix='fa')
-    ).add_to(mymap)
-
-# save the map
-mymap.save('bike_locations_map.html')
+bike_maps.map_bike_locations(df=df_bike__bikes_per_bike_number)
 
 #from current location to origin-destination-flow
 #store all bike numbers
